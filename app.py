@@ -5,7 +5,7 @@ import datetime
 app = Flask(__name__)
 
 
-@app.route('https://your-project.vercel.app/news.all.get')
+@app.route('/news.all.get')
 def get_news_all_articles():
 	data=[]
 	with open('news_data.json', 'r') as file:
